@@ -1,9 +1,3 @@
-//
-//  TheListUITestsLaunchTests.swift
-//  TheListUITests
-//
-//  Created by mohamed youssef on 13/06/2024.
-//
 
 import XCTest
 

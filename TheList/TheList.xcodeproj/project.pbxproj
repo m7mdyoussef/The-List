@@ -19,6 +19,19 @@
 		9E05910C2C1AFEFF001DE42E /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05910B2C1AFEFF001DE42E /* TargetType.swift */; };
 		9E05910E2C1AFF40001DE42E /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05910D2C1AFF40001DE42E /* BaseAPI.swift */; };
 		9E0591102C1B0407001DE42E /* ApplicationNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05910F2C1B0407001DE42E /* ApplicationNetworking.swift */; };
+		9E0591122C1B079F001DE42E /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591112C1B079F001DE42E /* UIImage+Extension.swift */; };
+		9E0591142C1B07DA001DE42E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591132C1B07DA001DE42E /* UIView+Extension.swift */; };
+		9E0591172C1B0890001DE42E /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591152C1B0890001DE42E /* CoordinatorProtocol.swift */; };
+		9E0591182C1B0890001DE42E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591162C1B0890001DE42E /* AppCoordinator.swift */; };
+		9E05911A2C1B0922001DE42E /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591192C1B0921001DE42E /* Injector.swift */; };
+		9E05911C2C1B09B6001DE42E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05911B2C1B09B6001DE42E /* BaseViewController.swift */; };
+		9E05911F2C1B0A70001DE42E /* SplashScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E05911D2C1B0A6F001DE42E /* SplashScreenViewController.storyboard */; };
+		9E0591202C1B0A70001DE42E /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05911E2C1B0A6F001DE42E /* SplashScreenViewController.swift */; };
+		9E0591262C1B0AFF001DE42E /* BaseCellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591222C1B0AFF001DE42E /* BaseCellViewModelProtocol.swift */; };
+		9E0591272C1B0AFF001DE42E /* BaseViewModelContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591232C1B0AFF001DE42E /* BaseViewModelContract.swift */; };
+		9E0591282C1B0AFF001DE42E /* CellViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591242C1B0AFF001DE42E /* CellViewProtocol.swift */; };
+		9E05912B2C1B0B35001DE42E /* SplashViewModelContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591292C1B0B35001DE42E /* SplashViewModelContract.swift */; };
+		9E05912C2C1B0B35001DE42E /* SplashScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05912A2C1B0B35001DE42E /* SplashScreenViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +68,19 @@
 		9E05910B2C1AFEFF001DE42E /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		9E05910D2C1AFF40001DE42E /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
 		9E05910F2C1B0407001DE42E /* ApplicationNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationNetworking.swift; sourceTree = "<group>"; };
+		9E0591112C1B079F001DE42E /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		9E0591132C1B07DA001DE42E /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		9E0591152C1B0890001DE42E /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		9E0591162C1B0890001DE42E /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		9E0591192C1B0921001DE42E /* Injector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
+		9E05911B2C1B09B6001DE42E /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		9E05911D2C1B0A6F001DE42E /* SplashScreenViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SplashScreenViewController.storyboard; sourceTree = "<group>"; };
+		9E05911E2C1B0A6F001DE42E /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		9E0591222C1B0AFF001DE42E /* BaseCellViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCellViewModelProtocol.swift; sourceTree = "<group>"; };
+		9E0591232C1B0AFF001DE42E /* BaseViewModelContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModelContract.swift; sourceTree = "<group>"; };
+		9E0591242C1B0AFF001DE42E /* CellViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellViewProtocol.swift; sourceTree = "<group>"; };
+		9E0591292C1B0B35001DE42E /* SplashViewModelContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewModelContract.swift; sourceTree = "<group>"; };
+		9E05912A2C1B0B35001DE42E /* SplashScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +189,8 @@
 		9E0590DB2C1AF1D5001DE42E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				9E05912A2C1B0B35001DE42E /* SplashScreenViewModel.swift */,
+				9E0591292C1B0B35001DE42E /* SplashViewModelContract.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -170,6 +198,8 @@
 		9E0590DC2C1AF1DF001DE42E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9E05911D2C1B0A6F001DE42E /* SplashScreenViewController.storyboard */,
+				9E05911E2C1B0A6F001DE42E /* SplashScreenViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -419,6 +449,8 @@
 		9E0590FB2C1AF8CF001DE42E /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				9E0591162C1B0890001DE42E /* AppCoordinator.swift */,
+				9E0591152C1B0890001DE42E /* CoordinatorProtocol.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -426,6 +458,9 @@
 		9E0590FC2C1AF92D001DE42E /* Contracts */ = {
 			isa = PBXGroup;
 			children = (
+				9E0591222C1B0AFF001DE42E /* BaseCellViewModelProtocol.swift */,
+				9E0591232C1B0AFF001DE42E /* BaseViewModelContract.swift */,
+				9E0591242C1B0AFF001DE42E /* CellViewProtocol.swift */,
 			);
 			path = Contracts;
 			sourceTree = "<group>";
@@ -433,6 +468,7 @@
 		9E0590FD2C1AF958001DE42E /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
+				9E05911B2C1B09B6001DE42E /* BaseViewController.swift */,
 			);
 			path = BaseViewController;
 			sourceTree = "<group>";
@@ -440,6 +476,7 @@
 		9E0590FE2C1AF97A001DE42E /* Injector */ = {
 			isa = PBXGroup;
 			children = (
+				9E0591192C1B0921001DE42E /* Injector.swift */,
 			);
 			path = Injector;
 			sourceTree = "<group>";
@@ -468,6 +505,8 @@
 			isa = PBXGroup;
 			children = (
 				9E0591092C1AFE61001DE42E /* ViewController+Extension.swift */,
+				9E0591112C1B079F001DE42E /* UIImage+Extension.swift */,
+				9E0591132C1B07DA001DE42E /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -592,6 +631,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E05911F2C1B0A70001DE42E /* SplashScreenViewController.storyboard in Resources */,
 				9E0590B52C1AE522001DE42E /* LaunchScreen.storyboard in Resources */,
 				9E0590B22C1AE522001DE42E /* Assets.xcassets in Resources */,
 			);
@@ -618,9 +658,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E05911C2C1B09B6001DE42E /* BaseViewController.swift in Sources */,
+				9E0591182C1B0890001DE42E /* AppCoordinator.swift in Sources */,
+				9E0591202C1B0A70001DE42E /* SplashScreenViewController.swift in Sources */,
+				9E0591262C1B0AFF001DE42E /* BaseCellViewModelProtocol.swift in Sources */,
+				9E0591282C1B0AFF001DE42E /* CellViewProtocol.swift in Sources */,
 				9E05910C2C1AFEFF001DE42E /* TargetType.swift in Sources */,
 				9E05910A2C1AFE61001DE42E /* ViewController+Extension.swift in Sources */,
+				9E0591172C1B0890001DE42E /* CoordinatorProtocol.swift in Sources */,
+				9E0591272C1B0AFF001DE42E /* BaseViewModelContract.swift in Sources */,
+				9E05912C2C1B0B35001DE42E /* SplashScreenViewModel.swift in Sources */,
 				9E0590A92C1AE520001DE42E /* AppDelegate.swift in Sources */,
+				9E0591142C1B07DA001DE42E /* UIView+Extension.swift in Sources */,
+				9E0591122C1B079F001DE42E /* UIImage+Extension.swift in Sources */,
+				9E05912B2C1B0B35001DE42E /* SplashViewModelContract.swift in Sources */,
+				9E05911A2C1B0922001DE42E /* Injector.swift in Sources */,
 				9E0591102C1B0407001DE42E /* ApplicationNetworking.swift in Sources */,
 				9E05910E2C1AFF40001DE42E /* BaseAPI.swift in Sources */,
 				9E0591082C1AFE14001DE42E /* Enums.swift in Sources */,
