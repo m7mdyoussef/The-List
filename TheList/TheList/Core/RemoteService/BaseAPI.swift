@@ -3,11 +3,10 @@ import Foundation
 
 class BaseAPI<T: TargetType> {
 
-    func fetchData<M: Decodable>(target: T, responseClass: M.Type, completion: @escaping (Result<M?, NSError>) -> Void) {
+    func fetchData<M: Decodable>(target: T, responseClass: M.Type, completion: @escaping (Result<M?, APIError>) -> Void) {
         // Build URL
         guard var urlComponents = URLComponents(string: target.baseURL + target.path) else {
-            let error = NSError(domain: target.baseURL, code: 0, userInfo: [NSLocalizedDescriptionKey: "Error building URL"])
-            completion(.failure(error))
+            completion(.failure(.invalidUrl))
             return
         }
 
@@ -22,16 +21,14 @@ class BaseAPI<T: TargetType> {
                     let jsonData = try JSONSerialization.data(withJSONObject: parameters, options: [])
                     urlComponents.queryItems = [URLQueryItem(name: "data", value: String(data: jsonData, encoding: .utf8))]
                 } catch {
-                    let error = NSError(domain: target.baseURL, code: 0, userInfo: [NSLocalizedDescriptionKey: "Error encoding parameters"])
-                    completion(.failure(error))
+                    completion(.failure(.invalidData))
                     return
                 }
             }
         }
 
         guard let url = urlComponents.url else {
-            let error = NSError(domain: target.baseURL, code: 0, userInfo: [NSLocalizedDescriptionKey: "Error creating URL"])
-            completion(.failure(error))
+            completion(.failure(.invalidUrl))
             return
         }
 
@@ -42,22 +39,31 @@ class BaseAPI<T: TargetType> {
 
         // Perform request
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            guard let httpResponse = response as? HTTPURLResponse else {
-                let error = NSError(domain: target.baseURL, code: 0, userInfo: [NSLocalizedDescriptionKey: "No internet connection"])
-                completion(.failure(error))
+            if let error = error {
+                if (error as NSError).code == NSURLErrorTimedOut {
+                    completion(.failure(.timeout))
+                } else {
+                    completion(.failure(.failedResponse))
+                }
                 return
             }
 
-            guard error == nil else {
-                let error = NSError(domain: target.baseURL, code: 0, userInfo: [NSLocalizedDescriptionKey: "Generic error"])
-                completion(.failure(error))
+            guard let httpResponse = response as? HTTPURLResponse else {
+                completion(.failure(.failedResponse))
                 return
             }
 
             guard httpResponse.statusCode == 200, let responseData = data else {
-                let message = "Error Message Parsed From Server"
-                let error = NSError(domain: target.baseURL, code: httpResponse.statusCode, userInfo: [NSLocalizedDescriptionKey: message])
-                completion(.failure(error))
+                if let responseData = data {
+                    do {
+                        let errorResponse = try JSONDecoder().decode(ErrorResponse.self, from: responseData)
+                        completion(.failure(.serverMessage(errorResponse.error.message)))
+                    } catch {
+                        completion(.failure(.failedDecoding))
+                    }
+                } else {
+                    completion(.failure(.serverMessage(Constants.UnknownServerError)))
+                }
                 return
             }
 
@@ -65,8 +71,7 @@ class BaseAPI<T: TargetType> {
                 let responseObject = try JSONDecoder().decode(M.self, from: responseData)
                 completion(.success(responseObject))
             } catch {
-                let error = NSError(domain: target.baseURL, code: 0, userInfo: [NSLocalizedDescriptionKey: "Error parsing response"])
-                completion(.failure(error))
+                completion(.failure(.failedDecoding))
             }
         }
         task.resume()
