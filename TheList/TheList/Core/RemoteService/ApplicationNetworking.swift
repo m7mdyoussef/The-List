@@ -2,7 +2,7 @@
 import Foundation
 
 enum ApplicationNetworking{
-    case getList(page:String)
+    case getList
 }
 
 extension ApplicationNetworking : TargetType{
@@ -29,10 +29,8 @@ extension ApplicationNetworking : TargetType{
     
     var task: Task {
         switch self{
-        case .getList(let page):
-            return .requestParameters(parameters:
-                                        [Constants.APIConstatnts.page:page],
-                                      encoding: .urlEncoding)
+        case .getList:
+            return .requestPlain
         }
     }
     var headers: [String : String]? {
