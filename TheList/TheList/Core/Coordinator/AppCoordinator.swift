@@ -10,7 +10,7 @@ class AppCoordinator: CoordinatorProtocol {
     }
     
     func start() {
-        let nextViewController = Injector.getSplashViewController(coordinator: self)
+        let nextViewController = Injector.getHomeViewController(coordinator: self)
         navigationController.pushViewController(nextViewController, animated: false)
     }
     
@@ -33,8 +33,8 @@ class AppCoordinator: CoordinatorProtocol {
             start()
         case .Home:
             openHomeScreen()
-        case .Details(let id):
-            openListDetailsScreen(id: id)
+        case .Details(let repoMode):
+            openListDetailsScreen(repoMode: repoMode)
         }
         
     }
@@ -43,7 +43,7 @@ class AppCoordinator: CoordinatorProtocol {
 
     }
     
-    private func openListDetailsScreen(id: Int) {
+    private func openListDetailsScreen(repoMode: RepoModel) {
 
     }
 }

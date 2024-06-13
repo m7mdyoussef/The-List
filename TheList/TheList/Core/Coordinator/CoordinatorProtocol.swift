@@ -14,5 +14,5 @@ protocol CoordinatorProtocol: AnyObject {
 enum DestinationScreens{
     case Splash
     case Home
-    case Details(Int)
+    case Details(RepoModel)
 }

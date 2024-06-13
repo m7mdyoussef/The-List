@@ -32,6 +32,26 @@
 		9E0591282C1B0AFF001DE42E /* CellViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591242C1B0AFF001DE42E /* CellViewProtocol.swift */; };
 		9E05912B2C1B0B35001DE42E /* SplashViewModelContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591292C1B0B35001DE42E /* SplashViewModelContract.swift */; };
 		9E05912C2C1B0B35001DE42E /* SplashScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05912A2C1B0B35001DE42E /* SplashScreenViewModel.swift */; };
+		9E05912E2C1B198A001DE42E /* ListRemoteDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05912D2C1B198A001DE42E /* ListRemoteDatasource.swift */; };
+		9E0591302C1B1A29001DE42E /* RepoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05912F2C1B1A29001DE42E /* RepoModel.swift */; };
+		9E0591322C1B1B05001DE42E /* ListRemoteDatasourceContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591312C1B1B05001DE42E /* ListRemoteDatasourceContract.swift */; };
+		9E0591342C1B1C50001DE42E /* RepoListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591332C1B1C50001DE42E /* RepoListRepository.swift */; };
+		9E0591362C1B1CB8001DE42E /* RepoListRepositoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591352C1B1CB8001DE42E /* RepoListRepositoryContract.swift */; };
+		9E0591382C1B23A4001DE42E /* RepoListUseCaseContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591372C1B23A4001DE42E /* RepoListUseCaseContract.swift */; };
+		9E05913A2C1B2853001DE42E /* RepoListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591392C1B2853001DE42E /* RepoListUseCase.swift */; };
+		9E05913C2C1B30A5001DE42E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05913B2C1B30A5001DE42E /* HomeViewModel.swift */; };
+		9E05913E2C1B30D0001DE42E /* HomeViewModelContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05913D2C1B30D0001DE42E /* HomeViewModelContract.swift */; };
+		9E0591412C1B3596001DE42E /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E05913F2C1B3596001DE42E /* HomeViewController.storyboard */; };
+		9E0591422C1B3596001DE42E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591402C1B3596001DE42E /* HomeViewController.swift */; };
+		9E0591462C1B5756001DE42E /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E0591432C1B5756001DE42E /* ListTableViewCell.xib */; };
+		9E0591472C1B5756001DE42E /* ListTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591442C1B5756001DE42E /* ListTableViewCellModel.swift */; };
+		9E0591482C1B5756001DE42E /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591452C1B5756001DE42E /* ListTableViewCell.swift */; };
+		9E05914A2C1B6DDC001DE42E /* date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591492C1B6DDC001DE42E /* date+Extension.swift */; };
+		9E05914C2C1B7644001DE42E /* ApiErrorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05914B2C1B7644001DE42E /* ApiErrorEnum.swift */; };
+		9E05914F2C1B7C1C001DE42E /* ListRemoteDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05914D2C1B7C1C001DE42E /* ListRemoteDatasource.swift */; };
+		9E0591502C1B7C1C001DE42E /* ListRemoteDatasourceContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05914E2C1B7C1C001DE42E /* ListRemoteDatasourceContract.swift */; };
+		9E0591522C1B7C36001DE42E /* RepoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591512C1B7C36001DE42E /* RepoModel.swift */; };
+		9E0591542C1B7C40001DE42E /* RepoListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591532C1B7C40001DE42E /* RepoListRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +101,26 @@
 		9E0591242C1B0AFF001DE42E /* CellViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellViewProtocol.swift; sourceTree = "<group>"; };
 		9E0591292C1B0B35001DE42E /* SplashViewModelContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewModelContract.swift; sourceTree = "<group>"; };
 		9E05912A2C1B0B35001DE42E /* SplashScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewModel.swift; sourceTree = "<group>"; };
+		9E05912D2C1B198A001DE42E /* ListRemoteDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRemoteDatasource.swift; sourceTree = "<group>"; };
+		9E05912F2C1B1A29001DE42E /* RepoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoModel.swift; sourceTree = "<group>"; };
+		9E0591312C1B1B05001DE42E /* ListRemoteDatasourceContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRemoteDatasourceContract.swift; sourceTree = "<group>"; };
+		9E0591332C1B1C50001DE42E /* RepoListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListRepository.swift; sourceTree = "<group>"; };
+		9E0591352C1B1CB8001DE42E /* RepoListRepositoryContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListRepositoryContract.swift; sourceTree = "<group>"; };
+		9E0591372C1B23A4001DE42E /* RepoListUseCaseContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListUseCaseContract.swift; sourceTree = "<group>"; };
+		9E0591392C1B2853001DE42E /* RepoListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListUseCase.swift; sourceTree = "<group>"; };
+		9E05913B2C1B30A5001DE42E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		9E05913D2C1B30D0001DE42E /* HomeViewModelContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelContract.swift; sourceTree = "<group>"; };
+		9E05913F2C1B3596001DE42E /* HomeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		9E0591402C1B3596001DE42E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9E0591432C1B5756001DE42E /* ListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		9E0591442C1B5756001DE42E /* ListTableViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCellModel.swift; sourceTree = "<group>"; };
+		9E0591452C1B5756001DE42E /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		9E0591492C1B6DDC001DE42E /* date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "date+Extension.swift"; sourceTree = "<group>"; };
+		9E05914B2C1B7644001DE42E /* ApiErrorEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiErrorEnum.swift; sourceTree = "<group>"; };
+		9E05914D2C1B7C1C001DE42E /* ListRemoteDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRemoteDatasource.swift; sourceTree = "<group>"; };
+		9E05914E2C1B7C1C001DE42E /* ListRemoteDatasourceContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRemoteDatasourceContract.swift; sourceTree = "<group>"; };
+		9E0591512C1B7C36001DE42E /* RepoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoModel.swift; sourceTree = "<group>"; };
+		9E0591532C1B7C40001DE42E /* RepoListRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoListRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +295,8 @@
 		9E0590E22C1AF606001DE42E /* ListRemoteDatasource */ = {
 			isa = PBXGroup;
 			children = (
+				9E05912D2C1B198A001DE42E /* ListRemoteDatasource.swift */,
+				9E0591312C1B1B05001DE42E /* ListRemoteDatasourceContract.swift */,
 			);
 			path = ListRemoteDatasource;
 			sourceTree = "<group>";
@@ -262,6 +304,7 @@
 		9E0590E32C1AF62B001DE42E /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				9E0591332C1B1C50001DE42E /* RepoListRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -269,6 +312,7 @@
 		9E0590E42C1AF63C001DE42E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9E05912F2C1B1A29001DE42E /* RepoModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -276,6 +320,7 @@
 		9E0590E52C1AF67C001DE42E /* UsecasContract */ = {
 			isa = PBXGroup;
 			children = (
+				9E0591372C1B23A4001DE42E /* RepoListUseCaseContract.swift */,
 			);
 			path = UsecasContract;
 			sourceTree = "<group>";
@@ -283,6 +328,7 @@
 		9E0590E62C1AF685001DE42E /* RepositoryContract */ = {
 			isa = PBXGroup;
 			children = (
+				9E0591352C1B1CB8001DE42E /* RepoListRepositoryContract.swift */,
 			);
 			path = RepositoryContract;
 			sourceTree = "<group>";
@@ -290,6 +336,7 @@
 		9E0590E72C1AF68F001DE42E /* Usecase */ = {
 			isa = PBXGroup;
 			children = (
+				9E0591392C1B2853001DE42E /* RepoListUseCase.swift */,
 			);
 			path = Usecase;
 			sourceTree = "<group>";
@@ -297,6 +344,8 @@
 		9E0590E82C1AF6BB001DE42E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9E05913F2C1B3596001DE42E /* HomeViewController.storyboard */,
+				9E0591402C1B3596001DE42E /* HomeViewController.swift */,
 				9E0590EB2C1AF6E4001DE42E /* ListCell */,
 			);
 			path = View;
@@ -312,6 +361,8 @@
 		9E0590EA2C1AF6CD001DE42E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				9E05913B2C1B30A5001DE42E /* HomeViewModel.swift */,
+				9E05913D2C1B30D0001DE42E /* HomeViewModelContract.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -319,6 +370,9 @@
 		9E0590EB2C1AF6E4001DE42E /* ListCell */ = {
 			isa = PBXGroup;
 			children = (
+				9E0591452C1B5756001DE42E /* ListTableViewCell.swift */,
+				9E0591432C1B5756001DE42E /* ListTableViewCell.xib */,
+				9E0591442C1B5756001DE42E /* ListTableViewCellModel.swift */,
 			);
 			path = ListCell;
 			sourceTree = "<group>";
@@ -366,6 +420,7 @@
 		9E0590F02C1AF7B2001DE42E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9E0591512C1B7C36001DE42E /* RepoModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -373,6 +428,7 @@
 		9E0590F12C1AF7BC001DE42E /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				9E0591532C1B7C40001DE42E /* RepoListRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -388,6 +444,8 @@
 		9E0590F32C1AF7F3001DE42E /* DetailsRemoteDatasource */ = {
 			isa = PBXGroup;
 			children = (
+				9E05914D2C1B7C1C001DE42E /* ListRemoteDatasource.swift */,
+				9E05914E2C1B7C1C001DE42E /* ListRemoteDatasourceContract.swift */,
 			);
 			path = DetailsRemoteDatasource;
 			sourceTree = "<group>";
@@ -487,6 +545,7 @@
 				9E05910B2C1AFEFF001DE42E /* TargetType.swift */,
 				9E05910D2C1AFF40001DE42E /* BaseAPI.swift */,
 				9E05910F2C1B0407001DE42E /* ApplicationNetworking.swift */,
+				9E05914B2C1B7644001DE42E /* ApiErrorEnum.swift */,
 			);
 			path = RemoteService;
 			sourceTree = "<group>";
@@ -507,6 +566,7 @@
 				9E0591092C1AFE61001DE42E /* ViewController+Extension.swift */,
 				9E0591112C1B079F001DE42E /* UIImage+Extension.swift */,
 				9E0591132C1B07DA001DE42E /* UIView+Extension.swift */,
+				9E0591492C1B6DDC001DE42E /* date+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -631,6 +691,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E0591412C1B3596001DE42E /* HomeViewController.storyboard in Resources */,
+				9E0591462C1B5756001DE42E /* ListTableViewCell.xib in Resources */,
 				9E05911F2C1B0A70001DE42E /* SplashScreenViewController.storyboard in Resources */,
 				9E0590B52C1AE522001DE42E /* LaunchScreen.storyboard in Resources */,
 				9E0590B22C1AE522001DE42E /* Assets.xcassets in Resources */,
@@ -659,23 +721,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E05911C2C1B09B6001DE42E /* BaseViewController.swift in Sources */,
+				9E0591542C1B7C40001DE42E /* RepoListRepository.swift in Sources */,
 				9E0591182C1B0890001DE42E /* AppCoordinator.swift in Sources */,
 				9E0591202C1B0A70001DE42E /* SplashScreenViewController.swift in Sources */,
 				9E0591262C1B0AFF001DE42E /* BaseCellViewModelProtocol.swift in Sources */,
+				9E0591482C1B5756001DE42E /* ListTableViewCell.swift in Sources */,
+				9E0591522C1B7C36001DE42E /* RepoModel.swift in Sources */,
+				9E0591382C1B23A4001DE42E /* RepoListUseCaseContract.swift in Sources */,
+				9E05913A2C1B2853001DE42E /* RepoListUseCase.swift in Sources */,
 				9E0591282C1B0AFF001DE42E /* CellViewProtocol.swift in Sources */,
 				9E05910C2C1AFEFF001DE42E /* TargetType.swift in Sources */,
 				9E05910A2C1AFE61001DE42E /* ViewController+Extension.swift in Sources */,
 				9E0591172C1B0890001DE42E /* CoordinatorProtocol.swift in Sources */,
+				9E05913C2C1B30A5001DE42E /* HomeViewModel.swift in Sources */,
+				9E0591302C1B1A29001DE42E /* RepoModel.swift in Sources */,
 				9E0591272C1B0AFF001DE42E /* BaseViewModelContract.swift in Sources */,
 				9E05912C2C1B0B35001DE42E /* SplashScreenViewModel.swift in Sources */,
+				9E0591472C1B5756001DE42E /* ListTableViewCellModel.swift in Sources */,
 				9E0590A92C1AE520001DE42E /* AppDelegate.swift in Sources */,
+				9E0591322C1B1B05001DE42E /* ListRemoteDatasourceContract.swift in Sources */,
 				9E0591142C1B07DA001DE42E /* UIView+Extension.swift in Sources */,
+				9E05914C2C1B7644001DE42E /* ApiErrorEnum.swift in Sources */,
+				9E0591362C1B1CB8001DE42E /* RepoListRepositoryContract.swift in Sources */,
 				9E0591122C1B079F001DE42E /* UIImage+Extension.swift in Sources */,
+				9E05914A2C1B6DDC001DE42E /* date+Extension.swift in Sources */,
 				9E05912B2C1B0B35001DE42E /* SplashViewModelContract.swift in Sources */,
 				9E05911A2C1B0922001DE42E /* Injector.swift in Sources */,
 				9E0591102C1B0407001DE42E /* ApplicationNetworking.swift in Sources */,
 				9E05910E2C1AFF40001DE42E /* BaseAPI.swift in Sources */,
+				9E05912E2C1B198A001DE42E /* ListRemoteDatasource.swift in Sources */,
+				9E0591342C1B1C50001DE42E /* RepoListRepository.swift in Sources */,
+				9E0591502C1B7C1C001DE42E /* ListRemoteDatasourceContract.swift in Sources */,
+				9E05913E2C1B30D0001DE42E /* HomeViewModelContract.swift in Sources */,
+				9E0591422C1B3596001DE42E /* HomeViewController.swift in Sources */,
 				9E0591082C1AFE14001DE42E /* Enums.swift in Sources */,
+				9E05914F2C1B7C1C001DE42E /* ListRemoteDatasource.swift in Sources */,
 				9E0591052C1AFD2A001DE42E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -854,7 +934,7 @@
 				INFOPLIST_FILE = TheList/ApplicationSupport/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -881,7 +961,7 @@
 				INFOPLIST_FILE = TheList/ApplicationSupport/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
