@@ -13,6 +13,12 @@
 		9E0590C02C1AE522001DE42E /* TheListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0590BF2C1AE522001DE42E /* TheListTests.swift */; };
 		9E0590CA2C1AE523001DE42E /* TheListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0590C92C1AE523001DE42E /* TheListUITests.swift */; };
 		9E0590CC2C1AE523001DE42E /* TheListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0590CB2C1AE523001DE42E /* TheListUITestsLaunchTests.swift */; };
+		9E0591052C1AFD2A001DE42E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591042C1AFD2A001DE42E /* Constants.swift */; };
+		9E0591082C1AFE14001DE42E /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591072C1AFE14001DE42E /* Enums.swift */; };
+		9E05910A2C1AFE61001DE42E /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591092C1AFE61001DE42E /* ViewController+Extension.swift */; };
+		9E05910C2C1AFEFF001DE42E /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05910B2C1AFEFF001DE42E /* TargetType.swift */; };
+		9E05910E2C1AFF40001DE42E /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05910D2C1AFF40001DE42E /* BaseAPI.swift */; };
+		9E0591102C1B0407001DE42E /* ApplicationNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05910F2C1B0407001DE42E /* ApplicationNetworking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +49,12 @@
 		9E0590C52C1AE522001DE42E /* TheListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E0590C92C1AE523001DE42E /* TheListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheListUITests.swift; sourceTree = "<group>"; };
 		9E0590CB2C1AE523001DE42E /* TheListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9E0591042C1AFD2A001DE42E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = SOURCE_ROOT; };
+		9E0591072C1AFE14001DE42E /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		9E0591092C1AFE61001DE42E /* ViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
+		9E05910B2C1AFEFF001DE42E /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		9E05910D2C1AFF40001DE42E /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		9E05910F2C1B0407001DE42E /* ApplicationNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationNetworking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -435,6 +447,9 @@
 		9E0590FF2C1AF98C001DE42E /* RemoteService */ = {
 			isa = PBXGroup;
 			children = (
+				9E05910B2C1AFEFF001DE42E /* TargetType.swift */,
+				9E05910D2C1AFF40001DE42E /* BaseAPI.swift */,
+				9E05910F2C1B0407001DE42E /* ApplicationNetworking.swift */,
 			);
 			path = RemoteService;
 			sourceTree = "<group>";
@@ -452,6 +467,7 @@
 		9E0591012C1AF9FE001DE42E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9E0591092C1AFE61001DE42E /* ViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -459,6 +475,7 @@
 		9E0591022C1AFA03001DE42E /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				9E0591042C1AFD2A001DE42E /* Constants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -466,6 +483,7 @@
 		9E0591032C1AFA0D001DE42E /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				9E0591072C1AFE14001DE42E /* Enums.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -600,7 +618,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E05910C2C1AFEFF001DE42E /* TargetType.swift in Sources */,
+				9E05910A2C1AFE61001DE42E /* ViewController+Extension.swift in Sources */,
 				9E0590A92C1AE520001DE42E /* AppDelegate.swift in Sources */,
+				9E0591102C1B0407001DE42E /* ApplicationNetworking.swift in Sources */,
+				9E05910E2C1AFF40001DE42E /* BaseAPI.swift in Sources */,
+				9E0591082C1AFE14001DE42E /* Enums.swift in Sources */,
+				9E0591052C1AFD2A001DE42E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
