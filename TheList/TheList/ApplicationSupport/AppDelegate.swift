@@ -1,9 +1,3 @@
-//
-//  AppDelegate.swift
-//  TheList
-//
-//  Created by mohamed youssef on 13/06/2024.
-//
 
 import UIKit
 
