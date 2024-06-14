@@ -48,10 +48,17 @@
 		9E0591482C1B5756001DE42E /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591452C1B5756001DE42E /* ListTableViewCell.swift */; };
 		9E05914A2C1B6DDC001DE42E /* date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591492C1B6DDC001DE42E /* date+Extension.swift */; };
 		9E05914C2C1B7644001DE42E /* ApiErrorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05914B2C1B7644001DE42E /* ApiErrorEnum.swift */; };
-		9E05914F2C1B7C1C001DE42E /* ListRemoteDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05914D2C1B7C1C001DE42E /* ListRemoteDatasource.swift */; };
-		9E0591502C1B7C1C001DE42E /* ListRemoteDatasourceContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05914E2C1B7C1C001DE42E /* ListRemoteDatasourceContract.swift */; };
-		9E0591522C1B7C36001DE42E /* RepoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591512C1B7C36001DE42E /* RepoModel.swift */; };
-		9E0591542C1B7C40001DE42E /* RepoListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591532C1B7C40001DE42E /* RepoListRepository.swift */; };
+		9E05914F2C1B7C1C001DE42E /* DetailsRemoteDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05914D2C1B7C1C001DE42E /* DetailsRemoteDatasource.swift */; };
+		9E0591502C1B7C1C001DE42E /* DetailsRemoteDatasourceContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05914E2C1B7C1C001DE42E /* DetailsRemoteDatasourceContract.swift */; };
+		9E0591542C1B7C40001DE42E /* DetailsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591532C1B7C40001DE42E /* DetailsRepository.swift */; };
+		9E0591562C1B7CFC001DE42E /* DetailsRepositoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591552C1B7CFC001DE42E /* DetailsRepositoryContract.swift */; };
+		9E0591582C1B7D04001DE42E /* DetailsUseCaseContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591572C1B7D04001DE42E /* DetailsUseCaseContract.swift */; };
+		9E05915A2C1B7D0B001DE42E /* DetailsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591592C1B7D0B001DE42E /* DetailsUseCase.swift */; };
+		9E0591682C1B7D32001DE42E /* DetailsViewModelContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591662C1B7D32001DE42E /* DetailsViewModelContract.swift */; };
+		9E0591692C1B7D32001DE42E /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0591672C1B7D32001DE42E /* DetailsViewModel.swift */; };
+		9E05916C2C1B7E35001DE42E /* RepoDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05916B2C1B7E35001DE42E /* RepoDetailsModel.swift */; };
+		9E05916F2C1B84CA001DE42E /* DetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E05916D2C1B84CA001DE42E /* DetailsViewController.storyboard */; };
+		9E0591702C1B84CA001DE42E /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05916E2C1B84CA001DE42E /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,10 +124,17 @@
 		9E0591452C1B5756001DE42E /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		9E0591492C1B6DDC001DE42E /* date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "date+Extension.swift"; sourceTree = "<group>"; };
 		9E05914B2C1B7644001DE42E /* ApiErrorEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiErrorEnum.swift; sourceTree = "<group>"; };
-		9E05914D2C1B7C1C001DE42E /* ListRemoteDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRemoteDatasource.swift; sourceTree = "<group>"; };
-		9E05914E2C1B7C1C001DE42E /* ListRemoteDatasourceContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRemoteDatasourceContract.swift; sourceTree = "<group>"; };
-		9E0591512C1B7C36001DE42E /* RepoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoModel.swift; sourceTree = "<group>"; };
-		9E0591532C1B7C40001DE42E /* RepoListRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoListRepository.swift; sourceTree = "<group>"; };
+		9E05914D2C1B7C1C001DE42E /* DetailsRemoteDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsRemoteDatasource.swift; sourceTree = "<group>"; };
+		9E05914E2C1B7C1C001DE42E /* DetailsRemoteDatasourceContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsRemoteDatasourceContract.swift; sourceTree = "<group>"; };
+		9E0591532C1B7C40001DE42E /* DetailsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsRepository.swift; sourceTree = "<group>"; };
+		9E0591552C1B7CFC001DE42E /* DetailsRepositoryContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsRepositoryContract.swift; sourceTree = "<group>"; };
+		9E0591572C1B7D04001DE42E /* DetailsUseCaseContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsUseCaseContract.swift; sourceTree = "<group>"; };
+		9E0591592C1B7D0B001DE42E /* DetailsUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsUseCase.swift; sourceTree = "<group>"; };
+		9E0591662C1B7D32001DE42E /* DetailsViewModelContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewModelContract.swift; sourceTree = "<group>"; };
+		9E0591672C1B7D32001DE42E /* DetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		9E05916B2C1B7E35001DE42E /* RepoDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailsModel.swift; sourceTree = "<group>"; };
+		9E05916D2C1B84CA001DE42E /* DetailsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetailsViewController.storyboard; sourceTree = "<group>"; };
+		9E05916E2C1B84CA001DE42E /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,8 +261,8 @@
 		9E0590DD2C1AF204001DE42E /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
-				9E0590DE2C1AF215001DE42E /* Data */,
 				9E0590DF2C1AF21E001DE42E /* Domain */,
+				9E0590DE2C1AF215001DE42E /* Data */,
 				9E0590E02C1AF22F001DE42E /* Presentation */,
 			);
 			path = HomeScreen;
@@ -380,8 +394,8 @@
 		9E0590EC2C1AF722001DE42E /* DetailsScreen */ = {
 			isa = PBXGroup;
 			children = (
-				9E0590EF2C1AF787001DE42E /* Data */,
 				9E0590EE2C1AF784001DE42E /* Domain */,
+				9E0590EF2C1AF787001DE42E /* Data */,
 				9E0590ED2C1AF77C001DE42E /* Presentation */,
 			);
 			path = DetailsScreen;
@@ -390,9 +404,9 @@
 		9E0590ED2C1AF77C001DE42E /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				9E0590F92C1AF85D001DE42E /* ViewModel */,
 				9E0590F82C1AF854001DE42E /* Model */,
 				9E0590F72C1AF84D001DE42E /* View */,
+				9E0590F92C1AF85D001DE42E /* ViewModel */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -400,8 +414,8 @@
 		9E0590EE2C1AF784001DE42E /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				9E0590F62C1AF839001DE42E /* UsecasContract */,
 				9E0590F52C1AF829001DE42E /* RepositoryContract */,
+				9E0590F62C1AF839001DE42E /* UsecasContract */,
 				9E0590F42C1AF820001DE42E /* Usecase */,
 			);
 			path = Domain;
@@ -410,25 +424,17 @@
 		9E0590EF2C1AF787001DE42E /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				9E05916A2C1B7DE2001DE42E /* Model */,
 				9E0590F22C1AF7BE001DE42E /* Datasource */,
 				9E0590F12C1AF7BC001DE42E /* Repository */,
-				9E0590F02C1AF7B2001DE42E /* Model */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		9E0590F02C1AF7B2001DE42E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				9E0591512C1B7C36001DE42E /* RepoModel.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		9E0590F12C1AF7BC001DE42E /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				9E0591532C1B7C40001DE42E /* RepoListRepository.swift */,
+				9E0591532C1B7C40001DE42E /* DetailsRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -444,8 +450,8 @@
 		9E0590F32C1AF7F3001DE42E /* DetailsRemoteDatasource */ = {
 			isa = PBXGroup;
 			children = (
-				9E05914D2C1B7C1C001DE42E /* ListRemoteDatasource.swift */,
-				9E05914E2C1B7C1C001DE42E /* ListRemoteDatasourceContract.swift */,
+				9E05914D2C1B7C1C001DE42E /* DetailsRemoteDatasource.swift */,
+				9E05914E2C1B7C1C001DE42E /* DetailsRemoteDatasourceContract.swift */,
 			);
 			path = DetailsRemoteDatasource;
 			sourceTree = "<group>";
@@ -453,6 +459,7 @@
 		9E0590F42C1AF820001DE42E /* Usecase */ = {
 			isa = PBXGroup;
 			children = (
+				9E0591592C1B7D0B001DE42E /* DetailsUseCase.swift */,
 			);
 			path = Usecase;
 			sourceTree = "<group>";
@@ -460,6 +467,7 @@
 		9E0590F52C1AF829001DE42E /* RepositoryContract */ = {
 			isa = PBXGroup;
 			children = (
+				9E0591552C1B7CFC001DE42E /* DetailsRepositoryContract.swift */,
 			);
 			path = RepositoryContract;
 			sourceTree = "<group>";
@@ -467,6 +475,7 @@
 		9E0590F62C1AF839001DE42E /* UsecasContract */ = {
 			isa = PBXGroup;
 			children = (
+				9E0591572C1B7D04001DE42E /* DetailsUseCaseContract.swift */,
 			);
 			path = UsecasContract;
 			sourceTree = "<group>";
@@ -474,6 +483,8 @@
 		9E0590F72C1AF84D001DE42E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9E05916D2C1B84CA001DE42E /* DetailsViewController.storyboard */,
+				9E05916E2C1B84CA001DE42E /* DetailsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -488,6 +499,8 @@
 		9E0590F92C1AF85D001DE42E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				9E0591672C1B7D32001DE42E /* DetailsViewModel.swift */,
+				9E0591662C1B7D32001DE42E /* DetailsViewModelContract.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -585,6 +598,14 @@
 				9E0591072C1AFE14001DE42E /* Enums.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		9E05916A2C1B7DE2001DE42E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9E05916B2C1B7E35001DE42E /* RepoDetailsModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -696,6 +717,7 @@
 				9E05911F2C1B0A70001DE42E /* SplashScreenViewController.storyboard in Resources */,
 				9E0590B52C1AE522001DE42E /* LaunchScreen.storyboard in Resources */,
 				9E0590B22C1AE522001DE42E /* Assets.xcassets in Resources */,
+				9E05916F2C1B84CA001DE42E /* DetailsViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -721,16 +743,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E05911C2C1B09B6001DE42E /* BaseViewController.swift in Sources */,
-				9E0591542C1B7C40001DE42E /* RepoListRepository.swift in Sources */,
+				9E0591542C1B7C40001DE42E /* DetailsRepository.swift in Sources */,
 				9E0591182C1B0890001DE42E /* AppCoordinator.swift in Sources */,
 				9E0591202C1B0A70001DE42E /* SplashScreenViewController.swift in Sources */,
 				9E0591262C1B0AFF001DE42E /* BaseCellViewModelProtocol.swift in Sources */,
+				9E05916C2C1B7E35001DE42E /* RepoDetailsModel.swift in Sources */,
 				9E0591482C1B5756001DE42E /* ListTableViewCell.swift in Sources */,
-				9E0591522C1B7C36001DE42E /* RepoModel.swift in Sources */,
 				9E0591382C1B23A4001DE42E /* RepoListUseCaseContract.swift in Sources */,
 				9E05913A2C1B2853001DE42E /* RepoListUseCase.swift in Sources */,
 				9E0591282C1B0AFF001DE42E /* CellViewProtocol.swift in Sources */,
 				9E05910C2C1AFEFF001DE42E /* TargetType.swift in Sources */,
+				9E05915A2C1B7D0B001DE42E /* DetailsUseCase.swift in Sources */,
 				9E05910A2C1AFE61001DE42E /* ViewController+Extension.swift in Sources */,
 				9E0591172C1B0890001DE42E /* CoordinatorProtocol.swift in Sources */,
 				9E05913C2C1B30A5001DE42E /* HomeViewModel.swift in Sources */,
@@ -738,24 +761,29 @@
 				9E0591272C1B0AFF001DE42E /* BaseViewModelContract.swift in Sources */,
 				9E05912C2C1B0B35001DE42E /* SplashScreenViewModel.swift in Sources */,
 				9E0591472C1B5756001DE42E /* ListTableViewCellModel.swift in Sources */,
+				9E0591562C1B7CFC001DE42E /* DetailsRepositoryContract.swift in Sources */,
 				9E0590A92C1AE520001DE42E /* AppDelegate.swift in Sources */,
 				9E0591322C1B1B05001DE42E /* ListRemoteDatasourceContract.swift in Sources */,
 				9E0591142C1B07DA001DE42E /* UIView+Extension.swift in Sources */,
 				9E05914C2C1B7644001DE42E /* ApiErrorEnum.swift in Sources */,
 				9E0591362C1B1CB8001DE42E /* RepoListRepositoryContract.swift in Sources */,
 				9E0591122C1B079F001DE42E /* UIImage+Extension.swift in Sources */,
+				9E0591692C1B7D32001DE42E /* DetailsViewModel.swift in Sources */,
 				9E05914A2C1B6DDC001DE42E /* date+Extension.swift in Sources */,
+				9E0591702C1B84CA001DE42E /* DetailsViewController.swift in Sources */,
+				9E0591682C1B7D32001DE42E /* DetailsViewModelContract.swift in Sources */,
 				9E05912B2C1B0B35001DE42E /* SplashViewModelContract.swift in Sources */,
 				9E05911A2C1B0922001DE42E /* Injector.swift in Sources */,
 				9E0591102C1B0407001DE42E /* ApplicationNetworking.swift in Sources */,
 				9E05910E2C1AFF40001DE42E /* BaseAPI.swift in Sources */,
 				9E05912E2C1B198A001DE42E /* ListRemoteDatasource.swift in Sources */,
+				9E0591582C1B7D04001DE42E /* DetailsUseCaseContract.swift in Sources */,
 				9E0591342C1B1C50001DE42E /* RepoListRepository.swift in Sources */,
-				9E0591502C1B7C1C001DE42E /* ListRemoteDatasourceContract.swift in Sources */,
+				9E0591502C1B7C1C001DE42E /* DetailsRemoteDatasourceContract.swift in Sources */,
 				9E05913E2C1B30D0001DE42E /* HomeViewModelContract.swift in Sources */,
 				9E0591422C1B3596001DE42E /* HomeViewController.swift in Sources */,
 				9E0591082C1AFE14001DE42E /* Enums.swift in Sources */,
-				9E05914F2C1B7C1C001DE42E /* ListRemoteDatasource.swift in Sources */,
+				9E05914F2C1B7C1C001DE42E /* DetailsRemoteDatasource.swift in Sources */,
 				9E0591052C1AFD2A001DE42E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
