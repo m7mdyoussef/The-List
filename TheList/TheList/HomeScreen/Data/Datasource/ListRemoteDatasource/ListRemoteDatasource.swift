@@ -2,7 +2,6 @@
 import Foundation
 
 class ListRemoteDatasource : BaseAPI<ApplicationNetworking>, ListRemoteDatasourceContract{
-
     func getRepoList(completion: @escaping (Result<[RepoModel]?, APIError>) -> Void) {
         self.fetchData(target: .getList, responseClass: [RepoModel].self) { (result) in
             switch result {
@@ -10,7 +9,7 @@ class ListRemoteDatasource : BaseAPI<ApplicationNetworking>, ListRemoteDatasourc
                 completion(.success(repoList))
             case .failure(let error):
                 completion(.failure(error))
-
+                
             }
         }
     }
@@ -18,5 +17,4 @@ class ListRemoteDatasource : BaseAPI<ApplicationNetworking>, ListRemoteDatasourc
     func cancelAllRequests() {
         self.cancelAnyRequest()
     }
-
 }

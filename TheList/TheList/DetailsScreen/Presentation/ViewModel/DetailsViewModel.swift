@@ -3,17 +3,17 @@ import Foundation
 
 
 class DetailsViewModel : DetailsViewModelContract{
-
-        var coordinator: CoordinatorProtocol
-        var errorHandler: ((String) -> Void)?
-        var loadingHandler: ((Bool) -> Void)?
-        var dataHandler: ((RepoDetailsModel) -> Void)?
-        private let usecase:DetailsUseCaseContract
-        var repoModel:RepoModel?
+    
+    var coordinator: CoordinatorProtocol
+    var errorHandler: ((String) -> Void)?
+    var loadingHandler: ((Bool) -> Void)?
+    var dataHandler: ((RepoDetailsModel) -> Void)?
+    var usecase:DetailsUseCaseContract
+    var repoModel:RepoModel?
     
     init(repoModel:RepoModel,
-        coordinator: CoordinatorProtocol,
-        usecase: DetailsUseCaseContract) {
+         coordinator: CoordinatorProtocol,
+         usecase: DetailsUseCaseContract) {
         self.coordinator = coordinator
         self.usecase = usecase
         self.repoModel = repoModel
@@ -40,11 +40,10 @@ class DetailsViewModel : DetailsViewModelContract{
             case .failure(let error):
                 self.errorHandler?(error.errorMessage)
             }
-
         }
     }
-
-    func popBack() {
+    
+    func navigateBack() {
         coordinator.dismiss()
     }
 }
