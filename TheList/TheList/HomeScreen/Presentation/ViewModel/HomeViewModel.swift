@@ -1,14 +1,13 @@
 
 import Foundation
 
-
 class HomeViewModel : HomeViewModelContract{
-
-        var coordinator: CoordinatorProtocol
-        var errorHandler: ((String) -> Void)?
-        var loadingHandler: ((Bool) -> Void)?
-        var dataHandler: (([RepoModel]) -> Void)?
-        private let usecase:RepoListUseCaseContract
+    
+    var coordinator: CoordinatorProtocol
+    var errorHandler: ((String) -> Void)?
+    var loadingHandler: ((Bool) -> Void)?
+    var dataHandler: (([RepoModel]) -> Void)?
+    private let usecase:RepoListUseCaseContract
     
     init(
         coordinator: CoordinatorProtocol,
@@ -32,12 +31,10 @@ class HomeViewModel : HomeViewModelContract{
                 }
             case .failure(let error):
                 self.errorHandler?(error.errorMessage)
-                
             }
-
         }
     }
-
+    
     func navigateTo(to: DestinationScreens) {
         switch to {
         case .Details(let repoModel):

@@ -7,5 +7,4 @@ protocol HomeViewModelContract : BaseViewModelContract {
     var dataHandler: (([RepoModel]) -> Void)? { get set }
     func fetchRepos()
     func navigateTo(to: DestinationScreens)
-
 }

@@ -10,13 +10,13 @@ class HomeViewController: BaseViewController {
     
     var RepoListViewModel: HomeViewModelContract!
     var repoArray: [RepoModel] = []
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupNavigationController()
         registerCellNibFile()
-
+        
         instantiateRefreshControl()
         bindViewModel()
         RepoListViewModel.fetchRepos()
@@ -56,7 +56,9 @@ class HomeViewController: BaseViewController {
             guard let self = self else{
                 return
             }
-            self.showAlert(title: "Error", body: message, actions: [UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)])
+            DispatchQueue.main.async {
+                self.showAlert(title: "Error", body: message, actions: [UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)])
+            }
         }
         
         self.RepoListViewModel.loadingHandler = {[weak self] (boolValue) in
@@ -87,7 +89,7 @@ extension HomeViewController:UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return repoArray.count
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.ListCellNibName, for: indexPath) as? CellViewProtocol
         let item = repoArray[indexPath.row]
@@ -103,7 +105,7 @@ extension HomeViewController:UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.RepoListViewModel.navigateTo(to: .Details(repoArray[indexPath.row]))
     }
-
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120
     }
