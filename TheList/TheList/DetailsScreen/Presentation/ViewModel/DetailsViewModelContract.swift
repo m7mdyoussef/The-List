@@ -7,4 +7,5 @@ protocol DetailsViewModelContract : BaseViewModelContract {
     var dataHandler: ((RepoDetailsModel) -> Void)? { get set }
     func fetchDetailsFollowers(withUrl url:String)
     func fetchDetails()
+    func navigateBack()
 }

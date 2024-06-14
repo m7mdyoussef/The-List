@@ -10,13 +10,13 @@ class ListTableViewCell: UITableViewCell, CellViewProtocol {
     
     func setup(viewModel: BaseCellViewModelProtocol) {
         guard let viewModel = viewModel as? ListTableViewCellModel else {return}
-
+        
         repoNameLabel.text = Constants.RepoName + (viewModel.repoName ?? "")
         repoOwnerNameLabel.text = Constants.OwnerName + (viewModel.repoOwnerName ?? "")
         createdAtLabel.text = viewModel.createdAt
-
+        
         if let imageURLString = viewModel.repoOwnerImage, let imageURL = URL(string: imageURLString) {
             RepoOwnerImageView.setImage(from: imageURL)
-          }
+        }
     }
 }

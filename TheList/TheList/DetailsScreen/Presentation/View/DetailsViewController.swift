@@ -14,7 +14,6 @@ class DetailsViewController: BaseViewController {
     @IBOutlet weak var websiteLbl: UILabel!
     @IBOutlet weak var TwitterLbl: UILabel!
     
-
     var detailsViewModel:DetailsViewModelContract!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,12 +26,15 @@ class DetailsViewController: BaseViewController {
         self.navigationItem.title = Constants.RepoDetails
     }
     
-    private func bindViewModel(){        
+    private func bindViewModel(){
         self.detailsViewModel.errorHandler = {[weak self] (message) in
             guard let self = self else{
                 return
             }
-            self.showAlert(title: "Error", body: message, actions: [UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)])
+            DispatchQueue.main.async {
+                self.showAlert(title: "Error", body: message, actions: [UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)])
+            }
+
         }
         
         self.detailsViewModel.loadingHandler = {[weak self] (boolValue) in

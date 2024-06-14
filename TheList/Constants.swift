@@ -14,10 +14,7 @@ enum Constants{
         static let baseURL = "https://api.github.com/"
         static let listUrlPath = "repositories"
     }
-    
 }
-
-
 
 struct ParameterNames {
     static let list_id = ""

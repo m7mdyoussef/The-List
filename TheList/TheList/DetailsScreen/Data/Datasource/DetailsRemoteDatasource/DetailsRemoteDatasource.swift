@@ -1,8 +1,8 @@
 
 import Foundation
 
-class DetailsRemoteDatasource : BaseAPI<ApplicationNetworking>, DetailsRemoteDatasourceContract{    
-
+class DetailsRemoteDatasource : BaseAPI<ApplicationNetworking>, DetailsRemoteDatasourceContract{
+    
     func getRepoDetails(withUrl url:String ,completion: @escaping (Result<RepoDetailsModel?, APIError>) -> Void) {
         self.fetchData(target: .getRepoDetails(url: url), responseClass: RepoDetailsModel.self) { (result) in
             switch result {
@@ -10,7 +10,6 @@ class DetailsRemoteDatasource : BaseAPI<ApplicationNetworking>, DetailsRemoteDat
                 completion(.success(followerModel))
             case .failure(let error):
                 completion(.failure(error))
-
             }
         }
     }
@@ -18,5 +17,5 @@ class DetailsRemoteDatasource : BaseAPI<ApplicationNetworking>, DetailsRemoteDat
     func cancelAllRequests() {
         self.cancelAnyRequest()
     }
-
+    
 }
