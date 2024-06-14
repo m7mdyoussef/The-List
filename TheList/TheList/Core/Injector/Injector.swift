@@ -10,15 +10,6 @@ class Injector {
         return viewcontroller
     }
     
-//    static func getHomeViewController(coordinator: CoordinatorProtocol) -> MoviesViewController {
-//        let repo =
-//        let viewModel = MoviesViewController(coordinator: coordinator)
-//        
-//        let viewcontroller = MoviesViewController.instantiateFromStoryBoard(appStoryBoard: .Home)
-//        viewcontroller.viewModel = viewModel
-//        return viewcontroller
-//    }
-    
     static func getHomeViewController(coordinator: CoordinatorProtocol) -> HomeViewController {
         let remoteDatasource = ListRemoteDatasource()
         let repo = RepoListRepository(listRemoteDatasource: remoteDatasource)
@@ -26,6 +17,16 @@ class Injector {
         let viewModel = HomeViewModel(coordinator: coordinator, usecase: usecase)
         let viewcontroller = HomeViewController.instantiateFromStoryBoard(appStoryBoard: .Home)
         viewcontroller.RepoListViewModel = viewModel
+        return viewcontroller
+    }
+    
+    static func getRepoDetailsViewController(coordinator: CoordinatorProtocol, repoModel: RepoModel) -> DetailsViewController {
+        let remoteDatasource = DetailsRemoteDatasource()
+        let repo = DetailsRepository(detailsRemoteDatasource: remoteDatasource)
+        let usecase = DetailsUseCase(repo: repo)
+        let viewModel = DetailsViewModel(repoModel: repoModel, coordinator: coordinator, usecase: usecase)
+        let viewcontroller = DetailsViewController.instantiateFromStoryBoard(appStoryBoard: .Details)
+        viewcontroller.detailsViewModel = viewModel
         return viewcontroller
     }
     

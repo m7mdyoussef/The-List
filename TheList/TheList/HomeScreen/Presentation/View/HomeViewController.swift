@@ -78,7 +78,6 @@ class HomeViewController: BaseViewController {
                 self.RepoListTableView.reloadData()
             }
         }
-
     }
 }
 

@@ -5,6 +5,7 @@ enum Constants{
 
     static let ListCellNibName = "ListTableViewCell"
     static let AppName = "Repository"
+    static let RepoDetails = "Repository Details"
     static let RepoName = "Repo Name: "
     static let OwnerName = "Owner Name: "
     static let DateNotAvailable = "Date not available" 

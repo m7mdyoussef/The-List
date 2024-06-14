@@ -25,7 +25,10 @@ class BaseViewController: UIViewController {
     }
     
     func hideLoading() {
-        activityIndicator.stopAnimating()
+        DispatchQueue.main.async { [weak self] in
+            guard let self else {return}
+            self.activityIndicator.stopAnimating()
+        }
     }
     
     func showAlert(title:String,body:String,actions:[UIAlertAction]){
