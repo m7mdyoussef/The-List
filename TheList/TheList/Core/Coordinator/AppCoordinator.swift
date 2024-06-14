@@ -34,16 +34,18 @@ class AppCoordinator: CoordinatorProtocol {
         case .Home:
             openHomeScreen()
         case .Details(let repoMode):
-            openListDetailsScreen(repoMode: repoMode)
+            openRepoDetailsScreen(repoModel: repoMode)
         }
         
     }
     
     private func openHomeScreen() {
-
+        let nextViewController = Injector.getHomeViewController(coordinator: self)
+        navigationController.pushViewController(nextViewController, animated: false)
     }
     
-    private func openListDetailsScreen(repoMode: RepoModel) {
-
+    private func openRepoDetailsScreen(repoModel: RepoModel) {
+        let nextViewController = Injector.getRepoDetailsViewController(coordinator: self, repoModel: repoModel)
+        navigationController.pushViewController(nextViewController, animated: false)
     }
 }
